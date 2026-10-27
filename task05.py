@@ -1,5 +1,5 @@
 # Task 5 - validation without touching 40 call sites
-#
+
 # 5.2 The constructor does self.price = price (not self._price), so it goes
 #     through the setter and wrong values are rejected there too.
 # 5.3 final_price uses integer math and // so the result is int, rounded down.

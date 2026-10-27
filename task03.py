@@ -1,5 +1,5 @@
 # Task 3 - dental clinic booking (paper task, so only text here)
-#
+
 # 3.1 Nouns and verbs
 #   verbs: books, works, moved, charged, confirms, sends
 #
@@ -15,7 +15,7 @@
 #               "confirms" (is an unconfirmed appointment already booked?),
 #               "fee is charged" (when and how does the patient pay?),
 #               "one room" (is the room always the same?)
-#
+
 # 3.2 CRC cards
 #
 #   Appointment
@@ -45,19 +45,19 @@
 #     - makes the text of the reminder
 #     - gives the text to the SMS client
 #     collaborators: Appointment, Patient, SmsClient
-#
+
 # 3.3 Double booking is checked by Dentist, because the dentist is the one
 #     who has the list of all his appointments and his working hours. One
 #     Appointment knows only itself and can not see the others.
 #     The 50 000 fee is calculated by Appointment, because it has the start
 #     time (it only needs "now" from outside) and it is the thing that is moved.
-#
+
 # 3.4 Yes it changes. Receptionist is no longer just an actor, we must store who
 #     confirmed. So Receptionist becomes a class (card with name/id, he calls
 #     confirm). On the Appointment card we add confirmed_by and confirmed_at,
 #     confirm(receptionist) saves them, and Receptionist is a new collaborator.
 #     Now we have 6 cards.
-#
+
 # 3.5 No. Appointment knows nothing about phones and SMS providers, if it sends
 #     SMS it has two jobs and it is hard to test. ReminderService sends it.
 #     Relationship between them: dependency (ReminderService only uses

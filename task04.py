@@ -1,5 +1,5 @@
 # Task 4 - the negative balance in production
-#
+
 # 4.1 Wrong type (10.5, "5", True) -> TypeError, because the type is wrong.
 #     Right type but bad value (-10, 0) -> ValueError.
 #     deposit(True) is NOT accepted: I check type(amount) is int, and

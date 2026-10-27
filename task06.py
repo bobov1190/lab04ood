@@ -1,5 +1,5 @@
 # Task 6 - duplicates after the nightly import
-#
+
 # 6.1 If a class has no __eq__ and __hash__, == compares identity (is) and
 #     hash() is made from the object id. Two Student objects with the same
 #     data are two different objects, so the set keeps both.

@@ -1,8 +1,7 @@
 # Task 1 - the cart that belongs to everybody
 #
 # 1.2 Both bugs have the same root cause: a mutable object ([]) is created
-#     only once (in the class body / in the def line) and then every
-#     Cart uses this one same list. So it is shared between all carts.
+#     only once and then every Cart uses this one same list. So it is shared between all carts.
 # 1.3 Fix = create new lists inside __init__ (None as default for coupons).
 #     In a dataclass "coupons: list = []" gives ValueError (mutable default
 #     is not allowed), so we write field(default_factory=list).

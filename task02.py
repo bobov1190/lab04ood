@@ -2,8 +2,6 @@
 #
 # 2.1 By hand (Checkout / Receipt / Courier), correct answer from the rule in brackets
 #     150 000 sum, 4.2 km -> 0 / 15 000 / 0        (correct: 0)      Checkout and Courier are right
-#     90 000 sum, 4.2 km  -> 15 000 / 15 000 / 15 600.0  (correct: 18 000)  nobody is right
-#     90 000 sum, 3.6 km  -> 12 000 / 15 000 / 13 800.0  (correct: 15 000)  only Receipt is right
 #     I ran the old code and got the same numbers.
 #     Problems: Receipt uses ">" instead of ">=", int() and round() are not
 #     "every started km", and Courier has no rounding at all (float money).
